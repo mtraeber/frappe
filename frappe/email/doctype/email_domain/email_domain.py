@@ -70,6 +70,7 @@ class EmailDomain(Document):
 				email_account.set("use_imap",self.use_imap)
 				email_account.set("use_ssl",self.use_ssl)
 				email_account.set("use_tls",self.use_tls)
+				email_account.set("incoming_port", self.incoming_port)
 				email_account.set("attachment_limit",self.attachment_limit)
 				email_account.set("smtp_server",self.smtp_server)
 				email_account.set("smtp_port",self.smtp_port)
